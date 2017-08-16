@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="br.hue.com.palindromo.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="312dp"
+        android:layout_height="463dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="32dp"
+            android:text="É um palíndromo? (versão beta, somente palavras)"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/et_palindromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_titulo"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Informe aqui a palavra"
+            android:textColor="#ddd"
+            tools:ignore="HardcodedText,LabelFor"
+            tools:textColorHint="#888" />
+
+        <TextView
+            android:id="@+id/tv_resposta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_palindromo"
+            android:layout_marginTop="55dp"
+            android:textColor="#ddd"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/bt_verificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="#306271"
+            android:text="Verificar"
+            android:textColor="@android:color/background_light"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
