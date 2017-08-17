@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity
 
         } else {
 
-            resposta = " Não é um palíndromo";
+            resposta = " não é um palíndromo";
         }
 
         resposta = palindromo.getConteudo() + resposta;
